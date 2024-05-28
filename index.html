@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Phudu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="text">Music Player</h1>
+      <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+          <div class="showTime">
+            <span class="currTime" id="currTime"></span>
+            <span class="durTime" id="durTime"></span>
+          </div>
+        </div>
+        <audio
+          src="./music/Xpert & Şəfiqə Axundova - Və bir də.mp3"
+          id="audio"
+        ></audio>
+        <div class="img-container">
+          <img
+            src="./images/Xpert & Şəfiqə Axundova - Və bir də.jpg"
+            alt="music-cover"
+            id="cover"
+          />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+        <input
+          type="range"
+          class="volume"
+          name="volume"
+          step="0.001"
+          min="0"
+          max="1"
+          value="1"
+        />
+        <div class="extension">
+          <button id="suffle" class="suffle design">
+            <i class="fa fa-random"></i>
+          </button>
+          <button id="repeat" class="repeat design">
+            <img src="./icons/repeat.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"
+      integrity="sha512-/J1T4RfwfHmP/1jDH9L/1Ax51Q21YCvMJq/ynj11hTEBwguvGJ2L72yVirJn1YQWHeZx+aIi1y5zgRueUdYn1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
